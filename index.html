@@ -1,59 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Careers
-  Events
-  Products
-  Support
+    <title>Frontend Mentor | Loopstudios landing page</title>
 
-  Immersive experiences that deliver
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        text-align: center;
+        color: black;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero section -->
+    <section class="hero container container-pt container-pr container-pl">
+      <div class="header">
+        <a href="#" class="logo">loopstudio</a>
+        <svg
+          class="menu-icon"
+          width="24"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+          </g>
+        </svg>
+      </div>
 
-  The leader in interactive VR
+      <h1 class="headline">Immersive experiences that deliver</h1>
+    </section>
+    <!-- End of Hero section -->
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+    <!-- About us section -->
+    <section class="about-us container container-pl container-pr container-pt">
+      <figure class="about-us-img">
+        <img src="./images/mobile/image-interactive.jpg" alt="VR Leader" />
+      </figure>
+      <article class="about-us-article">
+        <h2 class="subheadline">The leader in interactive VR</h2>
+        <p class="body-copy">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </article>
+    </section>
+    <!-- End of About us section -->
 
-  Our creations
+    <!-- Showcase section -->
+    <section class="showcase container container-pl container-pr container-pt">
+      <h2 class="subheadline">Our creations</h2>
 
-  See all
+      <div class="showcase-wrapper">
+        <figure class="image-1">
+          <img src="./images/mobile/image-deep-earth.jpg" alt="Deep Earth" />
+          <figcaption>
+            Deep <br />
+            Earth
+          </figcaption>
+        </figure>
+        <figure class="image-2">
+          <img
+            src="./images/mobile/image-night-arcade.jpg"
+            alt="Night Arcade"
+          />
+          <figcaption>
+            Night <br />
+            Arcade
+          </figcaption>
+        </figure>
+        <figure class="image-3">
+          <img src="./images/mobile/image-soccer-team.jpg" alt="Soccer Team" />
+          <figcaption>
+            Soccer <br />
+            Team VR
+          </figcaption>
+        </figure>
+        <figure class="image-4">
+          <img src="./images/mobile/image-grid.jpg" alt="The Grid" />
+          <figcaption>
+            The <br />
+            Grid
+          </figcaption>
+        </figure>
+        <figure class="image-5">
+          <img src="./images/mobile/image-from-above.jpg" alt="From Above VR" />
+          <figcaption>
+            From up <br />
+            above VR
+          </figcaption>
+        </figure>
+        <figure class="image-6">
+          <img
+            src="./images/mobile/image-pocket-borealis.jpg"
+            alt="Pocket Borealis"
+          />
+          <figcaption>
+            Pocket <br />
+            Borealis
+          </figcaption>
+        </figure>
+        <figure class="image-7">
+          <img src="./images/mobile/image-curiosity.jpg" alt="The Curiosity" />
+          <figcaption>
+            The <br />
+            Curiosity
+          </figcaption>
+        </figure>
+        <figure class="image-8">
+          <img src="./images/mobile/image-fisheye.jpg" alt="The Fisheye" />
+          <figcaption>
+            Make it <br />
+            fisheye
+          </figcaption>
+        </figure>
+      </div>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+      <a href="#" class="btn-link">See all</a>
+    </section>
+    <!-- End ofShowcase section -->
 
-  About
-  Careers
-  Events
-  Products
-  Support
+    <!-- Footer section -->
+    <section
+      class="
+        footer
+        container container-pl container-pr container-pt container-pb
+      "
+    >
+      <div class="footer-section-1">
+        <div class="logo">loopstudio</div>
+        <nav class="footer-navigation">
+          <ul>
+            <li class="navigatino-item">
+              <a href="#" class="footer-navigation">About</a>
+            </li>
+            <li class="navigatino-item">
+              <a href="#" class="footer-navigation">Careers</a>
+            </li>
+            <li class="navigatino-item">
+              <a href="#" class="footer-navigation">Events</a>
+            </li>
+            <li class="navigatino-item">
+              <a href="#" class="footer-navigation">Products</a>
+            </li>
+            <li class="navigatino-item">
+              <a href="#" class="footer-navigation">Support</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-  © 2021 Loopstudios. All rights reserved.
+      <div class="footer-section-2">
+        <ul class="socials">
+          <li>
+            <a href="" class="social-link">
+              <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-link">
+              <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-link">
+              <img src="./images/icon-pinterest.svg" alt="icon-pinterest" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-link">
+              <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </section>
+    <!-- End of Footer section -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution container container-pr container-pl">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Riki Garna</a>.
+    </div>
+  </body>
 </html>

@@ -1,0 +1,15 @@
+.about-us {
+  .about-us-img {
+    img {
+    }
+  }
+
+  .about-us-article {
+    text-align: center;
+
+    .body-copy {
+      padding: 0.7rem;
+      color: $darkGrey;
+    }
+  }
+}

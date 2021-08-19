@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.headline,
+.subheadline {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.subheadline {
+  font-size: 1.9rem;
+  color: black;
+  margin-top: 3.75rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+.container-pt {
+  padding-top: 2.13rem;
+}
+
+.container-pb {
+  padding-bottom: 2.13rem;
+}
+
+.container-pl {
+  padding-left: 1.5rem;
+}
+
+.container-pr {
+  padding-right: 1.5rem;
+}
+
+.hero {
+  height: 100vh;
+  background: url(../images/mobile/image-hero.jpg) no-repeat center center/cover;
+  position: relative;
+}
+
+.hero .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .header .logo {
+  font-size: 1.88rem;
+  line-height: 0.8;
+}
+
+.hero .header .menu-icon {
+  cursor: pointer;
+}
+
+.hero .headline {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-top: 160px;
+  padding: 0.5em;
+  border: 2px solid white;
+}
+
+.about-us .about-us-article {
+  text-align: center;
+}
+
+.about-us .about-us-article .body-copy {
+  padding: 0.7rem;
+  color: #8c8c8c;
+}
+
+.showcase .showcase-wrapper figure {
+  position: relative;
+  margin-bottom: 1.88rem;
+}
+
+.showcase .showcase-wrapper figure::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-wrapper figure figcaption {
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.showcase .btn-link {
+  display: block;
+  color: black;
+  width: 50%;
+  margin: 2rem auto;
+  padding: 0.7em 2.5em;
+  border: 1px solid black;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+}
+
+.footer .footer-section-1 {
+  margin-bottom: 1rem;
+}
+
+.footer .footer-section-1 .logo {
+  font-size: 1.63rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-section-1 .footer-navigation {
+  padding: 0.4em 0;
+  margin-bottom: 0.3em;
+}
+
+.footer .copyright,
+.footer .footer-navigation {
+  color: #8c8c8c;
+}
+
+.footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.footer .socials img {
+  width: 95%;
+}
+
+.footer .copyright {
+  margin-top: 1.1em;
+}
+/*# sourceMappingURL=style.css.map */

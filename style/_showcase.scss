@@ -1,0 +1,40 @@
+.showcase {
+  .showcase-wrapper {
+    figure {
+      position: relative;
+      margin-bottom: 1.88rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+
+      figcaption {
+        position: absolute;
+        left: 5%;
+        bottom: 15%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .btn-link {
+    display: block;
+    color: $black;
+    width: 50%;
+    margin: 2rem auto;
+    padding: 0.7em 2.5em;
+    border: 1px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}

@@ -1,0 +1,29 @@
+.hero {
+  height: 100vh;
+  background: url(../images/mobile/image-hero.jpg) no-repeat center center/cover;
+  position: relative;
+
+  .header {
+    // position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 1.88rem;
+      line-height: 0.8;
+    }
+
+    .menu-icon {
+      cursor: pointer;
+    }
+  }
+
+  .headline {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-top: 160px;
+    padding: 0.5em;
+    border: 2px solid $white;
+  }
+}
