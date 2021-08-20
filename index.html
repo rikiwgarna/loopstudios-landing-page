@@ -32,8 +32,8 @@
   </head>
   <body>
     <!-- Hero section -->
-    <section class="hero container container-pt container-pr container-pl">
-      <div class="header">
+    <section class="hero">
+      <div class="header container container-pl container-pr container-pt">
         <a href="#" class="logo">loopstudio</a>
         <svg
           class="menu-icon"
@@ -45,9 +45,43 @@
             <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
           </g>
         </svg>
-      </div>
+        <nav
+          class="mobile-menu container container-pl container-pr container-pt"
+        >
+          <header>
+            <a href="#" class="logo">loopstudio</a>
+            <svg
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-close"
+            >
+              <path
+                d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+                fill="#FFF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </header>
 
-      <h1 class="headline">Immersive experiences that deliver</h1>
+          <ul>
+            <div class="li"><a href="#" class="navigation-link">About</a></div>
+            <div class="li">
+              <a href="#" class="navigation-link">Careers</a>
+            </div>
+            <div class="li"><a href="#" class="navigation-link">Event</a></div>
+            <div class="li">
+              <a href="#" class="navigation-link">Products</a>
+            </div>
+            <div class="li">
+              <a href="#" class="navigation-link">Support</a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <article class="container container-pl container-pr container-pt">
+        <h1 class="headline">Immersive experiences that deliver</h1>
+      </article>
     </section>
     <!-- End of Hero section -->
 
@@ -205,5 +239,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Riki Garna</a>.
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>

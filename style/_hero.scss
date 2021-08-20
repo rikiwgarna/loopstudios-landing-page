@@ -8,14 +8,47 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     .logo {
       font-size: 1.88rem;
       line-height: 0.8;
     }
+  }
 
-    .menu-icon {
-      cursor: pointer;
+  .mobile-menu {
+    position: absolute;
+    background-color: $black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    height: 100vh;
+
+    &.active {
+      display: block;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 80vh;
+
+      .navigation-link {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding: 0.25em;
+        margin: 0.25em 0;
+      }
     }
   }
 
