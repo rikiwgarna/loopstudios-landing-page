@@ -2,53 +2,99 @@
   height: 100vh;
   background: url(../images/mobile/image-hero.jpg) no-repeat center center/cover;
   position: relative;
-
-  .header {
-    // position: fixed;
+  width: 100%;
+  @include breakpoint(medium) {
+    background: url(../images/desktop/image-hero.jpg) no-repeat center
+      center/cover;
+  }
+  .mobile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 
-    .logo {
-      font-size: 1.88rem;
-      line-height: 0.8;
+    @include breakpoint(medium) {
+      display: none;
+    }
+
+    .mobile-menu {
+      position: absolute;
+      background-color: $black;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      height: 100vh;
+
+      &.active {
+        display: block;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 80vh;
+
+        .navigation-link {
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          padding: 0.25em;
+          margin: 0.25em 0;
+        }
+      }
+    }
+  }
+  // Desktop header
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint-down(small) {
+      display: none;
+    }
+    .menu {
+      width: 40%;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        .navigation-link {
+          padding: 1em;
+          position: relative;
+
+          &:hover::after {
+            content: '';
+            position: absolute;
+            left: 30%;
+            bottom: 0;
+            height: 2px;
+            width: 40%;
+            background-color: $white;
+            margin-bottom: -1px;
+          }
+        }
+      }
     }
   }
 
-  .mobile-menu {
-    position: absolute;
-    background-color: $black;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-    height: 100vh;
+  .logo {
+    font-size: 1.88rem;
+    line-height: 0.8;
 
-    &.active {
-      display: block;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: 80vh;
-
-      .navigation-link {
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        padding: 0.25em;
-        margin: 0.25em 0;
-      }
+    @include breakpoint(medium) {
+      font: 2.2rem;
+      font-weight: bold;
     }
   }
 
@@ -58,5 +104,10 @@
     margin-top: 160px;
     padding: 0.5em;
     border: 2px solid $white;
+
+    @include breakpoint(medium) {
+      width: 55%;
+      font-size: 4.5rem;
+    }
   }
 }

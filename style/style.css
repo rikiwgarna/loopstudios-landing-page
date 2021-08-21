@@ -51,7 +51,7 @@ img {
 }
 
 .container {
-  max-width: 69.375rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -80,9 +80,16 @@ img {
   height: 100vh;
   background: url(../images/mobile/image-hero.jpg) no-repeat center center/cover;
   position: relative;
+  width: 100%;
 }
 
-.hero .header {
+@media (min-width: 40em) {
+  .hero {
+    background: url(../images/desktop/image-hero.jpg) no-repeat center center/cover;
+  }
+}
+
+.hero .mobile-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,12 +102,13 @@ img {
   position: relative;
 }
 
-.hero .header .logo {
-  font-size: 1.88rem;
-  line-height: 0.8;
+@media (min-width: 40em) {
+  .hero .mobile-header {
+    display: none;
+  }
 }
 
-.hero .mobile-menu {
+.hero .mobile-header .mobile-menu {
   position: absolute;
   background-color: black;
   top: 0;
@@ -111,11 +119,11 @@ img {
   height: 100vh;
 }
 
-.hero .mobile-menu.active {
+.hero .mobile-header .mobile-menu.active {
   display: block;
 }
 
-.hero .mobile-menu header {
+.hero .mobile-header .mobile-menu header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +135,7 @@ img {
           align-items: center;
 }
 
-.hero .mobile-menu ul {
+.hero .mobile-header .mobile-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,12 +149,71 @@ img {
   min-height: 80vh;
 }
 
-.hero .mobile-menu ul .navigation-link {
+.hero .mobile-header .mobile-menu ul .navigation-link {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 0.25em;
   margin: 0.25em 0;
+}
+
+.hero .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 39.9375em) {
+  .hero .header {
+    display: none;
+  }
+}
+
+.hero .header .menu {
+  width: 40%;
+}
+
+.hero .header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .header .menu ul .navigation-link {
+  padding: 1em;
+  position: relative;
+}
+
+.hero .header .menu ul .navigation-link:hover::after {
+  content: '';
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  height: 2px;
+  width: 40%;
+  background-color: white;
+  margin-bottom: -1px;
+}
+
+.hero .logo {
+  font-size: 1.88rem;
+  line-height: 0.8;
+}
+
+@media (min-width: 40em) {
+  .hero .logo {
+    font: 2.2rem;
+    font-weight: bold;
+  }
 }
 
 .hero .headline {
@@ -155,6 +222,13 @@ img {
   margin-top: 160px;
   padding: 0.5em;
   border: 2px solid white;
+}
+
+@media (min-width: 40em) {
+  .hero .headline {
+    width: 55%;
+    font-size: 4.5rem;
+  }
 }
 
 .about-us .about-us-article {
@@ -309,6 +383,7 @@ img {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
+  opacity: 0.7;
 }
 
 .showcase .btn-link {
