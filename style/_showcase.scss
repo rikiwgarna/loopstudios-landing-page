@@ -1,7 +1,10 @@
 .showcase {
   .showcase-wrapper {
-    figure {
+    .showcase-item-1 {
       position: relative;
+      background: url('../images/mobile/image-deep-earth.jpg') no-repeat center
+        center/cover;
+      min-height: 122px;
       margin-bottom: 1.88rem;
 
       &::before {
@@ -13,15 +16,140 @@
         bottom: 0;
         background-color: rgba($color: #000000, $alpha: 0.5);
       }
+    }
 
-      figcaption {
+    .showcase-item-2 {
+      position: relative;
+      background: url('../images/mobile/image-night-arcade.jpg') no-repeat
+        center center/cover;
+      min-height: 122px;
+      margin-bottom: 1.88rem;
+
+      &::before {
+        content: '';
         position: absolute;
-        left: 5%;
-        bottom: 15%;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.5rem;
-        text-transform: uppercase;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
       }
+    }
+
+    .showcase-item-3 {
+      position: relative;
+      background: url('../images/mobile/image-soccer-team.jpg') no-repeat center
+        center/cover;
+      min-height: 122px;
+      margin-bottom: 1.88rem;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+
+    .showcase-item-4 {
+      position: relative;
+      background: url('../images/mobile/image-grid.jpg') no-repeat center
+        center/cover;
+      min-height: 122px;
+      margin-bottom: 1.88rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+
+    .showcase-item-5 {
+      position: relative;
+      background: url('../images/mobile/image-from-above.jpg') no-repeat center
+        center/cover;
+      min-height: 122px;
+      margin-bottom: 1.88rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+
+    .showcase-item-6 {
+      position: relative;
+      background: url('../images/mobile/image-pocket-borealis.jpg') no-repeat
+        center center/cover;
+      min-height: 122px;
+      margin-bottom: 1.88rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+
+    .showcase-item-7 {
+      position: relative;
+      background: url('../images/mobile/image-curiosity.jpg') no-repeat center
+        center/cover;
+      min-height: 122px;
+      margin-bottom: 1.88rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+
+    .showcase-item-8 {
+      position: relative;
+      background: url('../images/mobile/image-fisheye.jpg') no-repeat center
+        center/cover;
+      min-height: 122px;
+      margin-bottom: 1.88rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+
+    .showcase-title {
+      position: absolute;
+      left: 5%;
+      bottom: 15%;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.5rem;
+      text-transform: uppercase;
     }
   }
 

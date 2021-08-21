@@ -166,12 +166,14 @@ img {
   color: #8c8c8c;
 }
 
-.showcase .showcase-wrapper figure {
+.showcase .showcase-wrapper .showcase-item-1 {
   position: relative;
+  background: url("../images/mobile/image-deep-earth.jpg") no-repeat center center/cover;
+  min-height: 122px;
   margin-bottom: 1.88rem;
 }
 
-.showcase .showcase-wrapper figure::before {
+.showcase .showcase-wrapper .showcase-item-1::before {
   content: '';
   position: absolute;
   left: 0;
@@ -181,7 +183,126 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.showcase .showcase-wrapper figure figcaption {
+.showcase .showcase-wrapper .showcase-item-2 {
+  position: relative;
+  background: url("../images/mobile/image-night-arcade.jpg") no-repeat center center/cover;
+  min-height: 122px;
+  margin-bottom: 1.88rem;
+}
+
+.showcase .showcase-wrapper .showcase-item-2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-wrapper .showcase-item-3 {
+  position: relative;
+  background: url("../images/mobile/image-soccer-team.jpg") no-repeat center center/cover;
+  min-height: 122px;
+  margin-bottom: 1.88rem;
+}
+
+.showcase .showcase-wrapper .showcase-item-3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-wrapper .showcase-item-4 {
+  position: relative;
+  background: url("../images/mobile/image-grid.jpg") no-repeat center center/cover;
+  min-height: 122px;
+  margin-bottom: 1.88rem;
+}
+
+.showcase .showcase-wrapper .showcase-item-4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-wrapper .showcase-item-5 {
+  position: relative;
+  background: url("../images/mobile/image-from-above.jpg") no-repeat center center/cover;
+  min-height: 122px;
+  margin-bottom: 1.88rem;
+}
+
+.showcase .showcase-wrapper .showcase-item-5::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-wrapper .showcase-item-6 {
+  position: relative;
+  background: url("../images/mobile/image-pocket-borealis.jpg") no-repeat center center/cover;
+  min-height: 122px;
+  margin-bottom: 1.88rem;
+}
+
+.showcase .showcase-wrapper .showcase-item-6::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-wrapper .showcase-item-7 {
+  position: relative;
+  background: url("../images/mobile/image-curiosity.jpg") no-repeat center center/cover;
+  min-height: 122px;
+  margin-bottom: 1.88rem;
+}
+
+.showcase .showcase-wrapper .showcase-item-7::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-wrapper .showcase-item-8 {
+  position: relative;
+  background: url("../images/mobile/image-fisheye.jpg") no-repeat center center/cover;
+  min-height: 122px;
+  margin-bottom: 1.88rem;
+}
+
+.showcase .showcase-wrapper .showcase-item-8::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .showcase-wrapper .showcase-title {
   position: absolute;
   left: 5%;
   bottom: 15%;
