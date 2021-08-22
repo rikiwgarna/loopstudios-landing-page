@@ -1,15 +1,41 @@
 .about-us {
-  .about-us-img {
-    img {
-    }
+  @include breakpoint(medium) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
-
   .about-us-article {
     text-align: center;
 
+    @include breakpoint(medium) {
+      position: absolute;
+      right: 0;
+      align-self: end;
+      width: 53%;
+      padding: 4.5em 0 0 5em;
+      // padding-top: 4.5em;
+      background-color: $white;
+      text-align: left;
+    }
+
+    .subheadline {
+      @include breakpoint(medium) {
+        margin-top: 0;
+        font-size: 3rem;
+        text-align: left;
+        line-height: 1;
+      }
+    }
     .body-copy {
       padding: 0.7rem;
       color: $darkGrey;
+
+      @include breakpoint(medium) {
+        padding: 0;
+        line-height: 1.5;
+      }
     }
   }
 }

@@ -19,6 +19,10 @@ body {
   font-family: 'Alata', sans-serif;
   font-size: 15px;
   color: $white;
+
+  @include breakpoint(medium) {
+    font-size: 16px;
+  }
 }
 
 a {
@@ -48,6 +52,10 @@ img {
   margin-top: 3.75rem;
   margin-bottom: 1.8rem;
   text-align: center;
+
+  @include breakpoint(medium) {
+    font-size: 2.9rem;
+  }
 }
 
 .container {
@@ -56,6 +64,10 @@ img {
 
   &-pt {
     padding-top: 2.13rem;
+
+    @include breakpoint(medium) {
+      padding-top: 4rem;
+    }
   }
 
   &-pb {

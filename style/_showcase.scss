@@ -1,5 +1,31 @@
 .showcase {
+  position: relative;
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-areas:
+      'title btn'
+      'img img';
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .subheadline {
+    margin-top: 1rem;
+    @include breakpoint(medium) {
+      grid-area: title;
+      text-align: left;
+    }
+  }
   .showcase-wrapper {
+    @include breakpoint(medium) {
+      grid-area: img;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 4rem 0;
+    }
     .showcase-item-1 {
       position: relative;
       background: url('../images/mobile/image-deep-earth.jpg') no-repeat center
@@ -7,14 +33,9 @@
       min-height: 122px;
       margin-bottom: 1.88rem;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+      @include breakpoint(medium) {
+        background: url('../images/desktop/image-deep-earth.jpg') no-repeat
+          center center/cover;
       }
     }
 
@@ -25,14 +46,9 @@
       min-height: 122px;
       margin-bottom: 1.88rem;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+      @include breakpoint(medium) {
+        background: url('../images/desktop/image-night-arcade.jpg') no-repeat
+          center center/cover;
       }
     }
 
@@ -42,14 +58,10 @@
         center/cover;
       min-height: 122px;
       margin-bottom: 1.88rem;
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+
+      @include breakpoint(medium) {
+        background: url('../images/desktop/image-soccer-team.jpg') no-repeat
+          center center/cover;
       }
     }
 
@@ -60,14 +72,9 @@
       min-height: 122px;
       margin-bottom: 1.88rem;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+      @include breakpoint(medium) {
+        background: url('../images/desktop/image-grid.jpg') no-repeat center
+          center/cover;
       }
     }
 
@@ -78,14 +85,9 @@
       min-height: 122px;
       margin-bottom: 1.88rem;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+      @include breakpoint(medium) {
+        background: url('../images/desktop/image-from-above.jpg') no-repeat
+          center center/cover;
       }
     }
 
@@ -96,14 +98,9 @@
       min-height: 122px;
       margin-bottom: 1.88rem;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+      @include breakpoint(medium) {
+        background: url('../images/desktop/image-pocket-borealis.jpg') no-repeat
+          center center/cover;
       }
     }
 
@@ -114,14 +111,9 @@
       min-height: 122px;
       margin-bottom: 1.88rem;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+      @include breakpoint(medium) {
+        background: url('../images/desktop/image-curiosity.jpg') no-repeat
+          center center/cover;
       }
     }
 
@@ -132,14 +124,9 @@
       min-height: 122px;
       margin-bottom: 1.88rem;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+      @include breakpoint(medium) {
+        background: url('../images/desktop/image-fisheye.jpg') no-repeat center
+          center/cover;
       }
     }
 
@@ -152,10 +139,46 @@
       text-transform: uppercase;
       opacity: 0.7;
     }
+
+    .showcase-item-1,
+    .showcase-item-2,
+    .showcase-item-3,
+    .showcase-item-4,
+    .showcase-item-5,
+    .showcase-item-6,
+    .showcase-item-7,
+    .showcase-item-8 {
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+      }
+      @include breakpoint(medium) {
+        min-height: 500px;
+        margin-bottom: 0;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0)
+          );
+        }
+      }
+    }
   }
 
   .btn-link {
-    display: block;
     color: $black;
     width: 50%;
     margin: 2rem auto;
@@ -165,5 +188,19 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
+
+    @include breakpoint(medium) {
+      grid-area: btn;
+      position: absolute;
+      right: 0;
+      align-self: end;
+      width: 40%;
+      padding: 0.6rem 0;
+
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
   }
 }
