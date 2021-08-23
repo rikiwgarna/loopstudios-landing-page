@@ -233,8 +233,7 @@ img {
 
 @media (min-width: 40em) {
   .hero .logo {
-    font: 2.2rem;
-    font-weight: bold;
+    font-size: 2.3rem;
   }
 }
 
@@ -597,8 +596,14 @@ img {
 }
 
 .footer .footer-wrapper .footer-section-1 .logo {
-  font-size: 1.63rem;
   margin-bottom: 1rem;
+  font-size: 1.63rem;
+}
+
+@media (min-width: 40em) {
+  .footer .footer-wrapper .footer-section-1 .logo {
+    font-size: 1.9rem;
+  }
 }
 
 .footer .footer-wrapper .footer-section-1 .footer-navigation {

@@ -99,8 +99,7 @@
     line-height: 0.8;
 
     @include breakpoint(medium) {
-      font: 2.2rem;
-      font-weight: bold;
+      font-size: 2.3rem;
     }
   }
 

@@ -26,8 +26,12 @@
       margin-bottom: 1rem;
 
       .logo {
-        font-size: 1.63rem;
         margin-bottom: 1rem;
+        font-size: 1.63rem;
+
+        @include breakpoint(medium) {
+          font-size: 1.9rem;
+        }
       }
 
       .footer-navigation {
