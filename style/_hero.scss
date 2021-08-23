@@ -107,12 +107,13 @@
   .headline {
     font-size: 2.5rem;
     line-height: 1;
-    margin-top: 160px;
+    margin-top: 11rem;
     padding: 0.5em;
     border: 2px solid $white;
 
     @include breakpoint(medium) {
       width: 55%;
+      margin-top: 4.38rem;
       font-size: 4.5rem;
     }
   }

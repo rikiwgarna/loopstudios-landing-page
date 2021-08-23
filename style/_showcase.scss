@@ -6,18 +6,17 @@
     grid-template-areas:
       'title btn'
       'img img';
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
   }
 
   .subheadline {
     margin-top: 1rem;
+
     @include breakpoint(medium) {
       grid-area: title;
       text-align: left;
     }
   }
+
   .showcase-wrapper {
     @include breakpoint(medium) {
       grid-area: img;
@@ -26,12 +25,10 @@
       gap: 1rem;
       margin: 4rem 0;
     }
+
     .showcase-item-1 {
-      position: relative;
       background: url('../images/mobile/image-deep-earth.jpg') no-repeat center
         center/cover;
-      min-height: 122px;
-      margin-bottom: 1.88rem;
 
       @include breakpoint(medium) {
         background: url('../images/desktop/image-deep-earth.jpg') no-repeat
@@ -40,11 +37,8 @@
     }
 
     .showcase-item-2 {
-      position: relative;
       background: url('../images/mobile/image-night-arcade.jpg') no-repeat
         center center/cover;
-      min-height: 122px;
-      margin-bottom: 1.88rem;
 
       @include breakpoint(medium) {
         background: url('../images/desktop/image-night-arcade.jpg') no-repeat
@@ -53,11 +47,8 @@
     }
 
     .showcase-item-3 {
-      position: relative;
       background: url('../images/mobile/image-soccer-team.jpg') no-repeat center
         center/cover;
-      min-height: 122px;
-      margin-bottom: 1.88rem;
 
       @include breakpoint(medium) {
         background: url('../images/desktop/image-soccer-team.jpg') no-repeat
@@ -66,11 +57,8 @@
     }
 
     .showcase-item-4 {
-      position: relative;
       background: url('../images/mobile/image-grid.jpg') no-repeat center
         center/cover;
-      min-height: 122px;
-      margin-bottom: 1.88rem;
 
       @include breakpoint(medium) {
         background: url('../images/desktop/image-grid.jpg') no-repeat center
@@ -79,11 +67,8 @@
     }
 
     .showcase-item-5 {
-      position: relative;
       background: url('../images/mobile/image-from-above.jpg') no-repeat center
         center/cover;
-      min-height: 122px;
-      margin-bottom: 1.88rem;
 
       @include breakpoint(medium) {
         background: url('../images/desktop/image-from-above.jpg') no-repeat
@@ -92,11 +77,8 @@
     }
 
     .showcase-item-6 {
-      position: relative;
       background: url('../images/mobile/image-pocket-borealis.jpg') no-repeat
         center center/cover;
-      min-height: 122px;
-      margin-bottom: 1.88rem;
 
       @include breakpoint(medium) {
         background: url('../images/desktop/image-pocket-borealis.jpg') no-repeat
@@ -105,11 +87,8 @@
     }
 
     .showcase-item-7 {
-      position: relative;
       background: url('../images/mobile/image-curiosity.jpg') no-repeat center
         center/cover;
-      min-height: 122px;
-      margin-bottom: 1.88rem;
 
       @include breakpoint(medium) {
         background: url('../images/desktop/image-curiosity.jpg') no-repeat
@@ -118,26 +97,13 @@
     }
 
     .showcase-item-8 {
-      position: relative;
       background: url('../images/mobile/image-fisheye.jpg') no-repeat center
         center/cover;
-      min-height: 122px;
-      margin-bottom: 1.88rem;
 
       @include breakpoint(medium) {
         background: url('../images/desktop/image-fisheye.jpg') no-repeat center
           center/cover;
       }
-    }
-
-    .showcase-title {
-      position: absolute;
-      left: 5%;
-      bottom: 15%;
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      opacity: 0.7;
     }
 
     .showcase-item-1,
@@ -148,6 +114,10 @@
     .showcase-item-6,
     .showcase-item-7,
     .showcase-item-8 {
+      position: relative;
+      min-height: 122px;
+      margin-bottom: 1.88rem;
+
       &::before {
         content: '';
         position: absolute;
@@ -157,6 +127,7 @@
         bottom: 0;
         background-color: rgba($color: #000000, $alpha: 0.5);
       }
+
       @include breakpoint(medium) {
         min-height: 500px;
         margin-bottom: 0;
@@ -174,6 +145,37 @@
             rgba(0, 0, 0, 0)
           );
         }
+
+        &:hover {
+          color: $black;
+          cursor: pointer;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba($color: $white, $alpha: 0.8);
+          }
+        }
+      }
+    }
+
+    .showcase-title {
+      position: absolute;
+      left: 5%;
+      bottom: 15%;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      opacity: 0.7;
+
+      @include breakpoint(medium) {
+        left: 15%;
+        bottom: 5%;
+        font-size: 1.9rem;
       }
     }
   }
